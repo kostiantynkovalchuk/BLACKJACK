@@ -1,0 +1,76 @@
+/* Mobile-first design */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0; /* Default background */
+  color: #fff; /* White text for better contrast */
+  text-align: center;
+  padding: 20px;
+  margin: 0;
+  background-image: url("images/table.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100vh;
+  font-size: 1.5rem;
+}
+
+h1 {
+  color: #ffcc00; /* Gold for title to make it stand out */
+  font-size: 2.5rem; /* Adjusted font size for better balance */
+}
+
+button {
+  background-color: #4caf50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 30px;
+  font-size: 1.5rem; /* Slightly larger for better readability */
+  cursor: pointer;
+  margin: 15px;
+  border-radius: 10px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+#player-el {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: 20px;
+  color: #ffcc00;
+}
+
+/* Medium screens: Tablets and up */
+@media (min-width: 768px) {
+  h1 {
+    font-size: 3rem; /* Larger heading on tablets */
+  }
+
+  button {
+    padding: 20px 40px;
+    font-size: 1.8rem;
+  }
+
+  #player-el {
+    font-size: 2rem;
+  }
+}
+
+footer {
+  font-size: 0.9rem;
+}
+
+/* Larger screens: Desktops and up */
+@media (min-width: 1024px) {
+  h1 {
+    font-size: 3.5rem; /* Larger heading on desktop */
+  }
+
+  button {
+    padding: 25px 50px;
+    font-size: 2rem; /* Bigger buttons on desktop */
+  }
+}
