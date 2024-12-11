@@ -74,3 +74,43 @@ function renderGame() {
     player.chips -= 10; // Example of chip deduction on losing
   }
 }
+
+// Get the elements
+const newGameButton = document.getElementById("start-game");
+const newCardButton = document.getElementById("new-card");
+
+// Function to start a new game
+function startNewGame() {
+  // Disable the new game button while the game cycle is ongoing
+  newGameButton.disabled = true;
+
+  // Logic for starting a new game (e.g., reset the game state, deal cards, etc.)
+  console.log("Starting new game...");
+
+  // Simulate the game cycle (e.g., new card drawn or some game logic)
+  setTimeout(() => {
+    // Enable the new game button after the cycle is complete
+    newGameButton.disabled = false;
+    console.log("Game is ready for a new round!");
+  }, 2000); // Adjust the time to match the game cycle duration
+}
+
+// Function to draw a new card
+function drawNewCard() {
+  // New card drawing logic (e.g., drawing a card, updating the display, etc.)
+  console.log("Drawing a new card...");
+
+  // Disable the new game button during the card drawing phase
+  newGameButton.disabled = true;
+
+  // Simulate card drawing process
+  setTimeout(() => {
+    // Re-enable the "New Game" button after drawing a new card
+    newGameButton.disabled = false;
+    console.log("Card drawn. You can start a new game now.");
+  }, 1500); // Adjust this time to match the duration for drawing the card
+}
+
+// Event listeners
+newGameButton.addEventListener("click", startNewGame);
+newCardButton.addEventListener("click", drawNewCard);
